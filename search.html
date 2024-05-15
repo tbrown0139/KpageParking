@@ -7,14 +7,29 @@
 <style>
     body {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
         height: 100vh;
         margin: 0;
+    }
+
+    #header {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    #search-title {
+        margin-bottom: 20px;
     }
 </style>
 </head>
 <body>
+    <div id="header">
+        <img src="https://knovon.org" alt="Knovon Logo" width="100px">
+    </div>
+    <h1 id="search-title">Knovon Search</h1>
     <script async src="https://cse.google.com/cse.js?cx=524d2974506c0420f"></script>
     <div class="gcse-searchbox-only"></div>
 </body>
